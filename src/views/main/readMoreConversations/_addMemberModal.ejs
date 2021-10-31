@@ -1,0 +1,24 @@
+<% newAllConversations.map((conversation, index) => { %>
+    <% if(conversation.members) { %>
+        <div class="modal fade" id="addMemberModal_<%= conversation._id %>" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Thêm thành viên.</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group">
+                            <input class="form-control input-find-member" data-uid="<%= conversation._id %>" placeholder="Nhập E-mail hoặc username..." aria-describedby="basic-addon2">
+                            <span class="input-group-addon btn-find-member">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </span>
+                        </div>
+                        <ul class="member-list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% } %>
+<% }); %>

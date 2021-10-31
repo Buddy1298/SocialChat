@@ -1,0 +1,20 @@
+{
+  "name": "awesome-chat",
+  "homepage": "https://",
+  "authors": [
+    "chauhoangduy <hoangduy.chau1298@gmail.com>"
+  ],
+  "description": "Manage frontend libraries.",
+  "main": "src/server.js",
+  "license": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bower_components": "https://github.com/trungquan17/awesome-chat-third-party-libraries.git",
+    "emojione": "^4.5.0"
+  }
+}

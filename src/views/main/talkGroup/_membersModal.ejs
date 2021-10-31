@@ -1,0 +1,43 @@
+<div class="modal fade" id="membersModal_<%= groupConversation._id %>" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Tất cả thành viên trong nhóm.</h4>
+            </div>
+            <div class="modal-body">
+                <div class="member-types">
+                    <div class="member-type-admin">
+                        <div></div>
+                        <span>Chủ nhóm</span>
+                    </div>
+                    <div class="member-type-member">
+                        <div></div>
+                        <span>Thành viên</span>
+                    </div>
+                </div>
+                <div class="all-members">
+                    <div class="row">
+                        <% groupConversation.membersInfo.forEach(member => { %> 
+                            <div id="<%= member._id %>" class="col-sm-2 member">
+                                <div class="thumbnail">
+                                    <img class="member-avatar" src="/images/users/<%= member.avatar %>" alt="">
+                                    <div class="caption">
+                                        <% if(groupConversation.userId == member._id) { %>
+                                            <p class="member-name admin"><%= member.username %></p>
+                                        <% } else { %> 
+                                            <p class="member-name"><%= member.username %></p>
+                                        <% } %>
+                                        <div class="member-talk" data-uid="<%= member._id %>" >
+                                            Trò chuyện
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

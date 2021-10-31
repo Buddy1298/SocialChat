@@ -1,0 +1,57 @@
+{
+  "name": "socialchat",
+  "version": "1.0.0",
+  "description": "SocialChat",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --es-module-specifier-resolution=node src/server.js",
+    "dev": "nodemon --inspect --es-module-specifier-resolution=node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Buddy1298/SocialChat.git"
+  },
+  "author": "HoangDuy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Buddy1298/SocialChat/issues"
+  },
+  "homepage": "https://github.com/Buddy1298/SocialChat#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "bl": "^4.0.3",
+    "bluebird": "^3.7.2",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "express-ejs-extend": "0.0.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.1",
+    "fs-extra": "^9.0.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.28.0",
+    "mongoose": "^5.10.6",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.11",
+    "objectid": "^3.2.1",
+    "otplib": "^12.0.1",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport.socketio": "^3.7.0",
+    "pem": "^1.14.4",
+    "qrcode": "^1.4.4",
+    "socket.io": "^2.3.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "braces": "^3.0.2",
+    "nodemon": "^2.0.4"
+  }
+}

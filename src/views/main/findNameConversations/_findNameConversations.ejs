@@ -1,0 +1,18 @@
+<% conversations.forEach(conversation => { %>
+    <% if (conversation.members) { %> 
+        <li class="search_item group-chat" data-uid="<%= conversation._id %>">
+            <img class="search_item" src="images/users/group-avatar-trungquandev.png" alt="">
+            <div>
+                <span class="name group-chat"><%= conversation.name %></span>
+            </div>
+        </li>    
+    <% } else { %> 
+        <li class="search_item" data-uid="<%= conversation._id %>">
+            <img src="images/users/<%= conversation.avatar %>" alt="">
+            <div>
+                <span class="name"><%= conversation.username %></span>
+                <span class="address"><%= conversation.address %></span>
+            </div>
+        </li>
+    <% } %>
+<% }) %>
