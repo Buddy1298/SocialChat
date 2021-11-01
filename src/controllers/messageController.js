@@ -9,7 +9,7 @@ import {message, contact, groupChat} from '../services';
 import {convertTimestampHumanTime, lastItemFromArr, bufferToBase64} from '../helpers/clientHelper';
 
 const {validationResult} = expressValidator;
-// Make ejs function renderFile avaiable with async await
+// Make ejs function renderFile available with async await
 const renderFile = promisify(ejs.renderFile).bind(ejs);
 
 // Handle emoji chat
