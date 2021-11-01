@@ -9,7 +9,7 @@ const mongoStore = connectMongo(session);
 const sessionStore = new mongoStore({
   url: `${process.env.DB_CONNECTION}://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`,
   autoReconnect: true,
-  // autoRemove: "native"
+  // autoRemove: "native" //khi cookie hết hạn sẽ tự động xóa session trong mongodb
 });
 
 /**
@@ -23,7 +23,7 @@ const config = (app) => {
       secret: process.env.SESSION_SECRET,
       store: sessionStore,
       resave: true,
-      saveUninitialized: false,
+      saveUninitialized: false,// tắt đi giảm chi phí xử lý dữ liệu trên ram
       cookie: {
         maxAge: 1000 * 60 * 60 * 24, // 1day
       }, 
