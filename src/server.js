@@ -13,8 +13,8 @@ import configSocketio from "./config/socketio";
 import configViewEngine from "./config/viewEngine";
 import initRoutes from "./routes/web";
 import initSockets from "./sockets";
-// import pem from "pem";
-// import https from 'https';
+import pem from "pem";
+import https from 'https';
 
 // Init app
 const app = express();

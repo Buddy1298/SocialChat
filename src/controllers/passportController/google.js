@@ -6,7 +6,7 @@ import UserModel from "../../models/userModel";
 const GoogleStrategy = passportGoogle.OAuth2Strategy;
 
 const ggAppId = process.env.GG_ID;
-const ggAppSecrect = process.env.GG_SECRECT;
+const ggAppSecret = process.env.GG_SECRET;
 const ggAppCallbackUrl = process.env.GG_CALLBACK_URL;
 
 /**
@@ -17,7 +17,7 @@ const initPassportGoogle = () => {
     new GoogleStrategy(
       {
         clientID: ggAppId,
-        clientSecret: ggAppSecrect,
+        clientSecret: ggAppSecret,
         callbackURL: ggAppCallbackUrl,
         passReqToCallback: true,
         profileFields: ["emails", "gender", "displayName"],

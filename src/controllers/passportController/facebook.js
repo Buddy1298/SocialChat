@@ -6,7 +6,7 @@ import UserModel from "../../models/userModel";
 const FacebookStrategy = passportFacebook.Strategy;
 
 const fbAppId = process.env.FB_ID;
-const fbAppSecrect = process.env.FB_SECRECT;
+const fbAppSecret = process.env.FB_SECRET;
 const fbAppCallbackUrl = process.env.FB_CALLBACK_URL;
 
 /**
@@ -17,7 +17,7 @@ const initPassportFacebook = () => {
     new FacebookStrategy(
       {
         clientID: fbAppId,
-        clientSecret: fbAppSecrect,
+        clientSecret: fbAppSecret,
         callbackURL: fbAppCallbackUrl,
         passReqToCallback: true,
         profileFields: ["emails", "gender", "displayName"]
