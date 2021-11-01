@@ -13,7 +13,7 @@ const UserSchema = new Schema({
   is2FAEnabled: { type: Boolean, default: false },
   secret: { type: String, default: null },
   local: {
-    email: { type: String, trim: true },
+    email: { type: String, trim: true },// trim để validate email k trống
     password: String,
     isActived: { type: Boolean, default: false },
     verifyToken: String,
@@ -28,7 +28,7 @@ const UserSchema = new Schema({
     token: String,
     email: { type: String, trim: true },
   },
-  createdAt: { type: Number, default: Date.now },
+  createdAt: { type: Number, default: Date.now },// lấy nhãn thời gian khi user tạo tk
   updatedAt: { type: Number, default: null },
   deletedAt: { type: Number, default: null },
 });
