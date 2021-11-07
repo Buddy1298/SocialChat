@@ -23,7 +23,7 @@ function updateUserInfo() {
     }
 
     if (fileData.size > limit) {
-      alertify.notify("Ảnh có kích thước tối đa 1MB", "error", 5);
+      alertify.notify("File có kích thước tối đa 1MB", "error", 5);
       $(this).val(null);
       return;
     }
