@@ -12,7 +12,7 @@ const getICETurnServer = () => {
   
     // let bodyString = JSON.stringify(o);
     // let options = {
-    //   url: "https://global.xirsys.net/_turn/awesome-chat",
+    //   url: "https://global.xirsys.net/_turn/SocialChat",
     //   method: "PUT",
     //   data: {},
     //   headers: {
@@ -69,7 +69,7 @@ const getHome = async (req, res) => {
     const username = req.user.username;
     const serviceName = process.env.OTP_SERVICE_NAME;
 
-    // generate secter
+    // generate secret
     const secret = twoFA.generateUniqueSecret();
 
     // generate otp token

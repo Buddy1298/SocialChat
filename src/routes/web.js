@@ -64,10 +64,10 @@ const initRoutes = (app) => {
 
   router.post("/register", auth.checkLoggedOut, authValid.register , auth.postRegister);
   router.post("/login", auth.checkLoggedOut, auth.postLoginLocal);
-
+  //Trang yêu cầu xác thực 2 lớp
   router.get('/verify-2fa/:userId', auth.checkLoggedOut, auth.getVerify2FAPage);
   router.post('/verify-2fa/:userId', auth.checkLoggedOut, authValid.verify2FA, auth.postVerify2FA);
-
+  //Trang bật tính năng bảo mật 2 lớp
   router.post('/enable-2fa', auth.checkLoggedIn, auth.postEnable2FA);
   router.post('/disable-2fa', auth.checkLoggedIn, auth.postDisableFA);
 
