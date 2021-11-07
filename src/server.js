@@ -63,6 +63,10 @@ server.listen(process.env.APP_PORT, process.env.APP_HOSTNAME, () => {
   );
 });
 
+// pem.config({
+//   pathOpenSSL: 'C:\\Program Files\\OpenSSL-Win64\\bin\\openssl'
+// })
+
 // pem.createCertificate({ days: 1, selfSigned: true }, function (err, keys) {
 //   if (err) {
 //     throw err;
