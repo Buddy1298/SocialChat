@@ -1,9 +1,11 @@
 import passport from "passport";
-import passportGoogle from "passport-google-oauth";
+// import passportGoogle from "passport-google-oauth";
+import passportGoogle from "passport-google-oauth2";
 import { transError, transSuccess } from "../../../lang/vi";
 import UserModel from "../../models/userModel";
 
-const GoogleStrategy = passportGoogle.OAuth2Strategy;
+// const GoogleStrategy = passportGoogle.OAuth2Strategy;
+const GoogleStrategy = passportGoogle.Strategy;
 
 const ggAppId = process.env.GG_ID;
 const ggAppSecret = process.env.GG_SECRET;
