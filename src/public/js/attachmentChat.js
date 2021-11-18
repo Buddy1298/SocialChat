@@ -2,10 +2,10 @@ function attachmentChat(divId) {
   $(`#attachment-chat-${divId}`).off("change").on("change", function () {
     // Validation update user avatar in frontend
     const fileData = $(this).prop("files")[0];
-    const limit = 1048576; // byte = 1MB
+    const limit = 3145728; // byte = 1MB
 
     if (fileData.size > limit) {
-      alertify.notify("Tệp đính kèm có kích thước tối đa 1MB", "error", 5);
+      alertify.notify("Tệp đính kèm có kích thước tối đa 3MB", "error", 5);
       $(this).val(null);
       return;
     }  

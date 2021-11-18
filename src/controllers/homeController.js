@@ -12,11 +12,11 @@ const getICETurnServer = () => {
   
     // let bodyString = JSON.stringify(o);
     // let options = {
-    //   url: "https://global.xirsys.net/_turn/SocialChat",
+    //   url: "https://global.xirsys.net/_turn/social-chat",
     //   method: "PUT",
     //   data: {},
     //   headers: {
-    //       Authorization: "Basic " + Buffer.from("hoanggaphan007:e8b3814e-c82f-11ea-9daf-0242ac150003").toString("base64"),
+    //       Authorization: "Basic " + Buffer.from("buddy1298:53fa7c02-48a2-11ec-9215-0242ac150003").toString("base64"),
     //       "Content-Type": "application/json",
     //       "Content-Length": bodyString.length
     //   }

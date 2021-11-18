@@ -3,7 +3,7 @@ function imageChat(divId) {
     // Validation update user avatar in frontend
     const fileData = $(this).prop("files")[0];
     const math = ["image/png", "image/jpg", "image/jpeg"];
-    const limit = 1048576; // byte = 1MB
+    const limit = 3145728; // byte = 3MB
 
     if ($.inArray(fileData.type, math) === -1) {
       alertify.notify(
@@ -16,7 +16,7 @@ function imageChat(divId) {
     }
 
     if (fileData.size > limit) {
-      alertify.notify("Ảnh có kích thước tối đa 1MB", "error", 5);
+      alertify.notify("Ảnh có kích thước tối đa 3MB", "error", 5);
       $(this).val(null);
       return;
     }
