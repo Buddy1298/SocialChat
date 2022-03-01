@@ -12,6 +12,9 @@ Front-end:
  Database:
  
     - MongoDB Atlas
+    
+ Demo link: https://socialchatapplication.herokuapp.com/login-register
+ 
  ![DatabaseChat](https://user-images.githubusercontent.com/72645238/156230704-7b3f7dfd-5876-4f0a-a9c3-d85c16bda1d3.PNG)
 
  ![Login](https://user-images.githubusercontent.com/72645238/156230025-89d79419-1b4b-4fd2-9365-5e2e92771f56.JPG)
