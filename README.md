@@ -20,6 +20,12 @@ Front-end:
     - MongoDB Atlas
     
  Demo link: https://socialchatapplication.herokuapp.com/login-register
+ Tài khoản demo 1: 
+ buddytest12981@gmail.com
+ Test@123
+ Tài khoản demo 2:
+ buddytest12983@gmail.com
+ Test@123
  [BaoCaoDoAn2.docx](https://github.com/Buddy1298/SocialChat/files/8185599/BaoCaoDoAn2.docx)
  
  ![DatabaseChat](https://user-images.githubusercontent.com/72645238/156230704-7b3f7dfd-5876-4f0a-a9c3-d85c16bda1d3.PNG)
